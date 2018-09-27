@@ -1,0 +1,30 @@
+{
+  "name": "barrack_life_x_server",
+  "version": "0.0.1",
+  "description": "Server application for BarrackLifeX",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://qorcjftns:Cjftns119@@github.com/qorcjftns/BarrackLifeX-Server.git"
+  },
+  "keywords": [
+    "BarrackLifeX",
+    "OSAM",
+    "Open",
+    "Source",
+    "Academy"
+  ],
+  "author": "Kyle Cheulsoon Baek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qorcjftns/BarrackLifeX-Server/issues"
+  },
+  "homepage": "https://github.com/qorcjftns/BarrackLifeX-Server#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.17"
+  }
+}
