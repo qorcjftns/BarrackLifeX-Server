@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/qorcjftns/BarrackLifeX-Server#readme",
   "dependencies": {
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "jquery": "^3.3.1",
     "mongoose": "^5.2.17"
   }
 }
