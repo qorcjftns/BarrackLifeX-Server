@@ -2,10 +2,57 @@
 	
 	<head>
 		<script src="/js/jquery.min.js"></script>
+		<script>
+			function submitAjax() {
+				$.ajax({
+					url: $('[name=url]').val(),
+					method: $('[name=method]').val(),
+					data: eval("(" + $('[name=data]').val() + ")"),
+					success: function(d) {
+						console.log(d);
+					}
+				});
+			}
+		</script>
+		<style>
+			textarea {
+				width: 300px;
+				height:300px;
+			}
+		</style>
 	</head>
 	<body>
+		<div class="item">
+			<div class="title">URL</div>
+			<div class="input">
+				<input name="url" type="text" placeholder='/api/auth/login' value="/api/auth/login"/>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">Method</div>
+			<div class="input">
+				<select name="method">
+					<option value="POST">POST</option>
+					<option value="GET">GET</option>
+				</select>
+			</div>
+		</div>
+		<div class="item">
+			<div class="title">URL</div>
+			<div class="input">
+				<textarea name="data">
+					{
+						'user_login_id': 'qorcjftns', 
+						'user_login_pw': '1q2w3e4r!'
+					}
+				</textarea>
+			</div>
+		</div>
+		<button id="submit" onclick="submitAjax();">전송</button>
 		
-		
+		<div id="result">
+			
+		</div>
 		
 	</body>
 	

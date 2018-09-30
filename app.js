@@ -4,6 +4,8 @@ var express		= require('express');
 var mongoose	= require('mongoose');
 var bodyParser	= require('body-parser');
 
+process.env.JWT_SECRET	= "barracklifex-server-jwt-key";
+
 // MongoDB Initialization
 var db = mongoose.connection;
 db.on('error', console.error);

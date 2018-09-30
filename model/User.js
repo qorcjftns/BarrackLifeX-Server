@@ -32,7 +32,7 @@ userSchema.pre('save', function(next) {
 	next();
 });
 userSchema.post('find', function(result) {
-	console.log('저장 완료', result);
+	console.log('검색 완료.');
 });
 
 
