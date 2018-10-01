@@ -6,8 +6,8 @@
 	1. [User](#user)
 	1. [Rank](#rank)
 1. [RESTFUL API Spec](#restful-api-spec)
-	1. [/api/auth](#/api/auth)
-		1. [/api/auth/login](#/api/auth/login)
+	1. [/api/auth](#apiauth)
+		1. [/api/auth/login](#apiauthlogin)
 
 ## 오브젝트 목록
 MongoDB 내부에 저장되는 스키마 목록입니다.
@@ -18,7 +18,7 @@ Model Location: `/model/User.js`
 사용자 모델입니다. 사용자의 모든 정보를 담고 있습니다.
 
 | Column | Type | Default | Required | Description |
-| ---- |
+| ---- | ---- | ---- | ---- | ---- |
 | user_login_id | String | - | true | 로그인 아이디 |
 | user_login_pw | String | - | true | 로그인 비밀번호 |
 | user_name | String | - | true | 사용자 이름 |
@@ -34,7 +34,7 @@ Model Location: `/model/Rank.js`
 계급 모델입니다. 계급 정보를 저장합니다.
 
 | Column | Type | Default | Required | Description |
-| ---- |
+| ---- | ---- | ---- | ---- | ---- |
 | rank_id | Number | - | true | 계급 고유 번호 |
 | rank_name | String | - | true | 계급 명칭 (이병,일병 등등) |
 | rank_type | String | - | true | 계급 종류 (병,부사관,장교) |
