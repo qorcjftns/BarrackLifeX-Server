@@ -17,6 +17,7 @@ var userSchema = new Schema({
 	},
 	user_rank: {
 		type: Number,
+		required: true,
 		default: 1
 	},
 	user_is_admin: {
