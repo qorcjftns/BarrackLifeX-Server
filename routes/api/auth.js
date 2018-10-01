@@ -8,10 +8,11 @@ router.post('/login', function(req,res,next){
 	console.log("user login request: ");
 	console.log("\tid: " +  req.body.user_login_id);
 	console.log("\tpw: " +  req.body.user_login_pw);
-	User.find({
+	User.findOne({
 			user_login_id: req.body.user_login_id,
 			user_login_pw: req.body.user_login_pw
 		})
+		.select({user_login_id:1, user_login_pw:1, user_name:1, user_rank:1, user_is_admin:1})
 		.exec(function (err, user) {
 			if (err) {
 				res.json({success: false, errors: err, token: undefined});

@@ -7,6 +7,7 @@
 				$.ajax({
 					url: $('[name=url]').val(),
 					method: $('[name=method]').val(),
+					headers : {"x-access-token" : $('[name=token]').val()},
 					data: eval("(" + $('[name=data]').val() + ")"),
 					success: function(d) {
 						console.log(d);
@@ -29,6 +30,12 @@
 			</div>
 		</div>
 		<div class="item">
+			<div class="title">x-access-token</div>
+			<div class="input">
+				<input name="token" type="text" />
+			</div>
+		</div>
+		<div class="item">
 			<div class="title">Method</div>
 			<div class="input">
 				<select name="method">
@@ -41,10 +48,10 @@
 			<div class="title">URL</div>
 			<div class="input">
 				<textarea name="data">
-					{
-						'user_login_id': 'qorcjftns', 
-						'user_login_pw': '1q2w3e4r!'
-					}
+{
+	'user_login_id': 'qorcjftns', 
+	'user_login_pw': '1q2w3e4r!'
+}
 				</textarea>
 			</div>
 		</div>
