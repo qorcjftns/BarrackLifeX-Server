@@ -41,12 +41,15 @@ Model Location: `/model/Rank.js`
 
 
 ## RESTFUL API Spec
+사용 가능한 RESTFUL API 목록입니다.
 
 ### /api/auth/
+사용자 인증과 관련된 기능들입니다.
 
 #### /api/auth/login
 Request:
 
+	// POST
 	{
 		user_login_id: "LOGIN_ID",
 		user_login_pw: "LOGIN_PW"

@@ -44,6 +44,7 @@ app.use(function (req, res, next) {
 
 app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/user', require('./routes/api/user'));
+app.use('/api/dev', require('./routes/api/dev'));
 
 
 // Starts app
