@@ -29,11 +29,11 @@ var userSchema = new Schema({
 
 
 userSchema.pre('save', function(next) {
-	console.log('저장 중...');
+	console.log('User 저장 중...');
 	next();
 });
 userSchema.post('find', function(result) {
-	console.log('검색 완료.');
+	console.log('User 검색 완료.');
 });
 
 
